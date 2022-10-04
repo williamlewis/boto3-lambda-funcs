@@ -14,5 +14,6 @@ resp = client.run_instances(
     MaxCount=1
 )
 
+# from Return dict object, retrieve the InstanceID from Instances item (only one instance created)
 for instance in resp['Instances']:
     print(instance['InstanceId'])
