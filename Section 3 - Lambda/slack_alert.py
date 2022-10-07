@@ -1,8 +1,9 @@
-from urllib import response
 import requests
 import json
+import os
 
-slack_web_hook = '' # enter hooks.slack.com/services/... URL here (HTTPS)
+slack_web_hook = os.environ['SLACK_WEBHOOK'] # pass in slack web hook URL as an environmental variable, using the os module & setting the env var in the console
+# in real use cases, be sure to encrypt the environmental variable (e.g. with KMS) and update code with related ENCRYPTED and DECRYPTED variables
 
 def send_slack(event, context):
     print(str(event))
