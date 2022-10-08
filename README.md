@@ -65,10 +65,33 @@ Platform:  Udemy
 
     |   SECTION (CODE SAMPLE)   |   ACTION  |   CLASSES USED    |   METHODS USED    |
     |---:|---|---|---|
-    |**Launching EC2 Instances** | create and launch new EC2 instances | `EC2.Client` | `.run_instances()` | AMI `ImageId`, Min. & Max. number of instances | None
-    |**Operations on EC2** | start, stop, & terminate EC2 instances | `EC2.Client` | `.start_instances()`, `.stop_instances()`, `.terminate_instances()`
-    |**Filtering & Describing EC2 Instances** | filter instances & display selected attributes | `EC2.Client` |  `.describe_instances()` 
-    |**Boto3 Collections** | find & stop instances in a running state | `EC2.ServiceResource` | `.stop()`
-    |**Taking EBS Snapshots & Sending Email Notifications** | take a snapshot of EBS volumes, then publish an email noting Snapshot Ids | `EC2.ServiceResource`, `SNS.Client` | `.publish()`
-    |**Deleting EBS Snapshots Older than X Days** | delete EC2 snapshots older than 15 days, using Python `datetime` module | #### `EC2.ServiceResource` | `.snapshots.fitler()`, `.delete()`
-    |**Migrating AMIs to Different Regions Using Boto3 Waiters** | create AMI from EC2 instance, wait for AMI to become available, then copy AMI to a different region | `EC2.ServiceResource`, `EC2.Client`, `EC2.Waiter.ImageAvailable` | `.create_image()`, `.get_waiter()`, `.wait()`
+    |**Section 2:**|**Managing EC2 Services & EBS Snapshots**
+    |<!-- **Launching EC2 Instances** --> | create and launch new EC2 instances | `EC2.Client` | `.run_instances()` | AMI `ImageId`, Min. & Max. number of instances | None
+    |<!-- **Operations on EC2** --> | start, stop, & terminate EC2 instances | `EC2.Client` | `.start_instances()`, `.stop_instances()`, `.terminate_instances()`
+    |<!-- **Filtering & Describing EC2 Instances** --> | filter instances & display selected attributes | `EC2.Client` |  `.describe_instances()` 
+    |<!-- **Boto3 Collections** --> | find & stop instances in a running state | `EC2.ServiceResource` | `.stop()`
+    |<!-- **Taking EBS Snapshots & Sending Email Notifications** --> | take a snapshot of EBS volumes, then publish an email noting Snapshot Ids | `EC2.ServiceResource`, `SNS.Client` | `.publish()`
+    |<!-- **Deleting EBS Snapshots Older than X Days** --> | delete EC2 snapshots older than 15 days, using Python `datetime` module | #### `EC2.ServiceResource` | `.snapshots.fitler()`, `.delete()`
+    |<!-- **Migrating AMIs to Different Regions Using Boto3 Waiters** --> | create AMI from EC2 instance, wait for AMI to become available, then copy AMI to a different region | `EC2.ServiceResource`, `EC2.Client`, `EC2.Waiter.ImageAvailable` | `.create_image()`, `.get_waiter()`, `.wait()`
+    |Section 3 - Lambda Functions & Real-Time Use Cases||||
+    |Section 4||||
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Column 1 Header</th>
+            <th>Column 2 Header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 - Column 1</td>
+            <td>Row 1 - Column 2</td>
+        </tr>
+        <tr>
+            <td colspan=2, style="text-align: center">Row 2 - Columns 1 - 2</td>
+        </tr>
+    </tbody>
+</table>
