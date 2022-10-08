@@ -33,11 +33,5 @@ json_file_reader = json_object['Body'].read() # call the read() method because v
 json_dict = json.loads(json_file_reader)
 
 # get DynamoDB table & insert JSON file contents
-table = dynamodb_client.Table('demo-employees')
+table = dynamodb_resource.Table('demo-employees')
 table.put_item(Item=json_dict)
-
-
-print(str(event))
-return 'Hello from Lambda'
-
-
