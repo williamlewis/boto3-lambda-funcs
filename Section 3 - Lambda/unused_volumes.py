@@ -1,3 +1,4 @@
+import email
 import boto3
 ec2_client = boto3.client('ec2')
 sns_client = boto3.client('sns')
@@ -8,9 +9,11 @@ sns_arn = 'arn:aws:sns:us-east-1:095304811476:volume-alerts' # get actual SNS To
 
 # check for any unused EBS volumes (i.e. if they are not attached to any EC2 intance)
 unused_volumes = []
+total_unused_vol_size = 0
 for volume in volumes['Volumes']:
     if len(volume['Attachments']) == 0:
         unused_volumes.append(volume['VolumeId'])
+        total_unused_vol_size += volume['Size']
 
 
 
@@ -23,7 +26,7 @@ if len(unused_volumes) > 0:
 else:
     email_body += 'No unused volumes were found.'
 
-
+email_body += f'\n\nThe total size of currently unused volumes is {total_unused_vol_size} GB.' # include a footnote summarizing storage size of all unused volumes
 
 # send email summary of unused volumes using SNS
 sns_client.publish(
