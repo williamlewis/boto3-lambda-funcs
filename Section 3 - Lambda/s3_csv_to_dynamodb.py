@@ -3,7 +3,7 @@ s3_client = boto3.client('s3')
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('employees')
     
-def csv_to_dynamodb(event, context):
+def s3_csv_to_dynamodb(event, context):
     # get uploaded file from event response details
     bucket_name = event['Records'][0]['s3']['bucket']['name']
     object_key = event['Records'][0]['s3']['object']['key']
