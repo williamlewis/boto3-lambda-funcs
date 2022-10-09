@@ -1,3 +1,4 @@
+from fcntl import F_FULLFSYNC
 import boto3
 import json
 s3_client = boto3.client('s3')
