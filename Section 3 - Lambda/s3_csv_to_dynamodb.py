@@ -12,11 +12,11 @@ def s3_csv_to_dynamodb(event, context):
     # read contents of CSV file & prepare data for DynamoDB
     csv_data = response['Body'].read() # call read() method because body is returned as a StreamingBody()
     csv_formatted = csv_data.decode('utf-8') # call decode() to convert from binary form to plain text
-    employees = csv_formatted.split('\n')
+    employees = csv_formatted.split('\n') # create a list to iterate over
 
     # persist data to DynamoDB (i.e. enter data in table)
     for emp in employees:
-        emp_data = emp.split(',')
+        emp_data = emp.split(',') # create a list to reference attributes via indices
         try:
             table.put_item(
                 Item={
@@ -27,3 +27,5 @@ def s3_csv_to_dynamodb(event, context):
                 )
         except Exception as e:
             print(f'Error:  not able to add item {emp} to DynamoDB')
+    
+    return None
