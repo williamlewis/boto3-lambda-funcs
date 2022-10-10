@@ -12,6 +12,9 @@ response = table.get_item(
     }
 )
 
-
-
-
+table.delete_item(
+    Key={
+        #'key': 'value'
+        'emp_id': '2'
+    }
+)
