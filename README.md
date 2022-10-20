@@ -31,19 +31,19 @@ Project
 ## Course Outline
 
 - Managing EC2 Services & EBS Snapshots
-    - **Launching EC2 Instances**
+    - Launching EC2 Instances
 
-    - **Operations on EC2**
+    - Operations on EC2
 
-    - **Filtering & Describing EC2 Instances**
+    - Filtering & Describing EC2 Instances
 
-    - **Boto3 Collections**
+    - Boto3 Collections
     
-    - **Taking EBS Snapshots & Sending Email Notifications**
+    - Taking EBS Snapshots & Sending Email Notifications
 
-    - **Deleting EBS Snapshots Older than X Days**
+    - Deleting EBS Snapshots Older than X Days
 
-    - **Migrating AMIs to Different Regions Using Boto3 Waiters**
+    - **Migrating AMIs to Different Regions Using Boto3 Waiters
 
 
 
