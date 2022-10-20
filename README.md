@@ -9,39 +9,41 @@ Platform:  Udemy
 
 --
 
+
+
+- Managing EC2 Instances, EBS Volumes, & AMIs + Notifications with SNS
+- Using Lambda Functions with S3, DynamoDB, CloudWatch, EC2, AMIs, & SNS
+
+
+Project
+- services used
+- action taken using xyz methods
+
+
+
+|SERVICES|S3|CLOUDWATCH|LAMBDA|DYNAMODB
+|---:|---|---|---|---|
+|VIA CONSOLE|uploaded sample CSV file|created event for CSV uploads into bucket|created function|created sample table|
+|VIA BOTO3|created bucket w/ xyz() method|got bucket & object details from event log response|read & converted file data|wrote data to table|
+
+---
+
 ## Course Outline
 
 - Managing EC2 Services & EBS Snapshots
     - **Launching EC2 Instances**
-        - create and launch new EC2 instances using `EC2.Client` class and `.run_instances()` method
-        - provided inputs:  AMI ImageId, Min. / Max. number of instances
 
     - **Operations on EC2**
-        - start, stop, and terminate existing EC2 isntances using `EC2.Client` class and `.start_instances()`, `.stop_instances()`, and `.terminate_instances()` methods
-        - provided inputs:  InstanceId (list of Ids if multiple)
 
     - **Filtering & Describing EC2 Instances**
-        - filter instances and display selected attributes using `EC2.Client` class and `.describe_instances()` method
-        - provided inputs:  instance tag key/value pairs, attributes to describe
 
     - **Boto3 Collections**
-        - find and stop instances in a "running" state using `EC2.ServiceResource` class and `.stop()` method
-        - provided inputs:  current instance state
     
     - **Taking EBS Snapshots & Sending Email Notifications**
-        - take a snapshot for all EBS volumes attached to a filtered selection of EC2 instances, using `EC2.ServiceResource` class
-        - publish an email message noting all Snapshot Ids using `SNS.Client` class and `.publish()` method
-        - provided inputs:  instance tag key/value pairs, snapshot description, SNS message, SNS TopicArn, SNS email subject
 
     - **Deleting EBS Snapshots Older than X Days**
-        - delete EC2 snapshots started more than 15 days ago by self using `EC2.ServiceResource` class and `.snapshots.filter()` and `.delete()` methods
-        - provided inputs:  snapshot OwnerIds
-        - python modules:  `datetime`
 
     - **Migrating AMIs to Different Regions Using Boto3 Waiters**
-        - create AMI from filtered selection of EC2 instances using `EC2.ServiceResource` class and `.create_image()` method
-        - wait for newly created AMI to become available using `EC2.Client` and `EC2.Waiter.ImageAvailable` classes and `.get_waiter()` and `.wait()` methods
-        - copy AMI image from a source region to a separate destination region using `EC2.Client` class and `.copy_image()` method
 
 
 
