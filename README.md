@@ -5,6 +5,8 @@ Instructor:  Hari Kammana
 
 Platform:  Udemy
 
+<br/>
+<br/>
 
 ---
 
@@ -13,23 +15,129 @@ Platform:  Udemy
 Using Boto3 within Lambda Functions to manage S3, DynamoDB, CloudWatch, EC2, AMIs, SNS, & SES
 
 
+<table>
+    <thead>
+        <tr>
+            <th width="20%">Name</th>
+            <th width="60%">Description</th>
+            <th width="20%">Classes Used</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="20%"><a href="">file name (hyperlink to gh page)</a></td>
+            <td width="60%">regular text description</td>
+            <td width="20%"><code>classes used (code snippet)</code></td>
+        </tr>
+        <tr>
+            <td width="20%" ><a href="">find_and_email_unused_eips.py</a></td>
+            <td width="60%">Find unused Elastic IPs and send alert email using SES and Lambda environmental variables</td>
+            <td width="20%"><code>EC2.Client</code>, <code>SES.Client</code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href="">s3_csv_to_dynamodb.py</a></td>
+            <td width="60%">Persist CSV data to DynamoDB when file is uploaded to an S3 bucket</td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href="">s3_json_to_dynamodb.py</a></td>
+            <td width="60%">Persist JSON data to DynamoDB when file upload triggers a CloudWatch log event</td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href="">slack_alert.py</a></td>
+            <td width="60%">Send Slack message via webhook to alert when an instance has stopped</td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href="">unused_volumes.py</a></td>
+            <td width="60%">Check for unattached (unused) EBS volumes and send alert email using SNS</td>
+            <td width="20%"><code></code></td>
+        </tr>
+    </tbody>
+</table>
 
 
 
-
-
-- Find unused Elastic IPs and send alert email using SES and Lambda environmental variables
-- Persist CSV data to DynamoDB when file is uploaded to an S3 bucket
-- Persist JSON data to DynamoDB when file upload triggers a CloudWatch log event
-- Send Slack message via webhook to alert when an instance has stopped
-- Check for unattached (unused) EBS volumes and send alert email using SNS
-
-
+<br/>
+<br/>
 
 ---
 
 ## Part 2:  Boto3 Terminal Scripts
 Using Boto3 Terminal Scripts to manage EC2 Instances, EBS Volumes, & AMIs
+
+
+<table>
+    <thead>
+        <tr>
+            <th width="20%">Name</th>
+            <th width="60%">Description</th>
+            <th width="20%">Classes Used</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%"></td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%">Deregister unused custom AMIs</td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%">Query contents of CSV file stored in S3</td>
+            <td width="20%"><code></code></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href=""></a></td>
+            <td width="60%">Start, stop, & terminate instances based in Id</td>
+            <td width="20%"><code></code></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
 
 
 - Create AMI & copy to another region
@@ -40,9 +148,9 @@ Using Boto3 Terminal Scripts to manage EC2 Instances, EBS Volumes, & AMIs
 - Get instances from filtered resource collections
 - Launch new intances based on AMI & instance type
 - Delete EBS snapshots older than x days
-- Deregister unused custom AMIs
-- Query contents of CSV file stored in S3
-- Start, stop, & terminate instances based in Id
+- 
+- 
+- 
 
 
 
