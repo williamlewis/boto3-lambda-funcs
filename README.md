@@ -78,79 +78,62 @@ Using Boto3 Terminal Scripts to manage EC2 Instances, EBS Volumes, & AMIs
     </thead>
     <tbody>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">create_image_copy_to_diff_region.py</a></td>
+            <td width="60%">Create AMI & copy to another region</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">describe_instances.py</a></td>
+            <td width="60%">Describe instances from resource collection</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">dynamobd_batch_write.py</a></td>
+            <td width="60%">Batch write data to DynamoDB table</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">dynamobd_get_and_delete.py</a></td>
+            <td width="60%">Delete data from DynamoDB table</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">ebs_snapshots_email.py</a></td>
+            <td width="60%">Email list of EBS Snapshots base on tags</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">ec2_collections.py</a></td>
+            <td width="60%">Get instances from filtered resource collections</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">launch_ec2.py</a></td>
+            <td width="60%">Launch new intances based on AMI & instance type</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
-            <td width="60%"></td>
+            <td width="20%"><a href="">remove_old_ebs_snapshots.py</a></td>
+            <td width="60%">Delete EBS snapshots older than 15 days</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
+            <td width="20%"><a href="">remove_unused_amis.py</a></td>
             <td width="60%">Deregister unused custom AMIs</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
+            <td width="20%"><a href="">s3_query_csv_select_object_content.py</a></td>
             <td width="60%">Query contents of CSV file stored in S3</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href=""></a></td>
+            <td width="20%"><a href="">sec_start_stop_terminate.py</a></td>
             <td width="60%">Start, stop, & terminate instances based in Id</td>
             <td width="20%"><code></code></td>
         </tr>
     </tbody>
 </table>
-
-
-
-
-
-
-- Create AMI & copy to another region
-- Describe instances from resource collection
-- Batch write data to DynamoDB table
-- Delete data from DynamoDB table
-- Email list of EBS Snapshots base on tags
-- Get instances from filtered resource collections
-- Launch new intances based on AMI & instance type
-- Delete EBS snapshots older than x days
-- 
-- 
-- 
 
 
 
@@ -179,39 +162,7 @@ Project
 |VIA CONSOLE|uploaded sample CSV file|created event for CSV uploads into bucket|created function|created sample table|
 |VIA BOTO3|created bucket w/ xyz() method|got bucket & object details from event log response|read & converted file data|wrote data to table|
 
----
 
-## Course Outline
-
-- Managing EC2 Services & EBS Snapshots
-    - Launching EC2 Instances
-
-    - Operations on EC2
-
-    - Filtering & Describing EC2 Instances
-
-    - Boto3 Collections
-    
-    - Taking EBS Snapshots & Sending Email Notifications
-
-    - Deleting EBS Snapshots Older than X Days
-
-    - **Migrating AMIs to Different Regions Using Boto3 Waiters
-
-
-
-
-
-
-
-
-- AWS Lambda - Develop Real-Time Use Cases
-- Boto3 & DynamoDB
-- Operations on S3
-- Cost Optimization
-
-
-<br/>
 <br/>
 <br/>
 
@@ -233,23 +184,6 @@ Project
 
 
 
-<table>
-    <thead>
-        <tr>
-            <th>Column 1 Header</th>
-            <th>Column 2 Header</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1 - Column 1</td>
-            <td>Row 1 - Column 2</td>
-        </tr>
-        <tr>
-            <td colspan=2, style="text-align: center">Row 2 - Columns 1 - 2</td>
-        </tr>
-    </tbody>
-</table>
 
 
 
