@@ -41,7 +41,7 @@ Using Boto3 within Lambda Functions to manage S3, DynamoDB, CloudWatch, EC2, AMI
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/01%20-%20Boto3%20Lambda%20Functions/s3_csv_to_dynamodb.py">s3 csv to dynamodb.py</a></td>
         </tr>
         <tr>
-            <td width="60%">Persist JSON data to DynamoDB when file upload triggers a CloudWatch log event</td>
+            <td width="60%">Persist JSON data to DynamoDB when S3 file upload triggers a CloudWatch log event</td>
             <td width="20%"><code>Lambda</code> <code>S3</code> <code>DynamoDB</code></td>
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/01%20-%20Boto3%20Lambda%20Functions/s3_json_to_dynamodb.py">s3 json to dynamodb.py</a></td>
         </tr>
