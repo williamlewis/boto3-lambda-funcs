@@ -80,12 +80,12 @@ Using Boto3 Terminal Scripts to manage EC2 Instances, EBS Volumes, & AMIs
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/dynamobd_batch_write.py">dynamobd batch write.py</a></td>
         </tr>
         <tr>
-            <td width="60%">Delete data from DynamoDB table</td>
+            <td width="60%">Get and delete items from DynamoDB table</td>
             <td width="20%"><code>DynamoDB</code></td>
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/dynamobd_get_and_delete.py">dynamobd get and delete.py</a></td>
         </tr>
         <tr>
-            <td width="60%">Email list of EBS Snapshots base on tags</td>
+            <td width="60%">Email list of EBS Snapshots based on tags</td>
             <td width="20%"><code>EC2</code> <code>SNS</code></td>
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/ebs_snapshots_email.py">ebs snapshots email.py</a></td>
         </tr>
@@ -95,12 +95,12 @@ Using Boto3 Terminal Scripts to manage EC2 Instances, EBS Volumes, & AMIs
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/create_image_copy_to_diff_region.py">create image copy to diff region.py</a></td>
         </tr>
         <tr>
-            <td width="60%">Describe instances from resource collection</td>
+            <td width="60%">Describe instances and related attributes</td>
             <td width="20%"><code>EC2</code></td>
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/describe_instances.py">describe instances.py</a></td>
         </tr>
         <tr>
-            <td width="60%">Get instances from filtered resource collections</td>
+            <td width="60%">Use EC2 resource collections to filter & manage instances</td>
             <td width="20%"><code>EC2</code></td>
             <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/ec2_collections.py">ec2 collections.py</a></td>
         </tr>
