@@ -1,11 +1,14 @@
-from fcntl import F_FULLFSYNC
+# Persist JSON data to DynamoDB when S3 file upload triggers a CloudWatch log event
+
 import boto3
 import json
+
 s3_client = boto3.client('s3')
 dynamodb_resource = boto3.resource('dynamodb')
 
 
 def s3_json_to_dynamodb(event, context):
+    
     # get bucket name & JSON filename (object key) from CloudWatch log event
     bucket = event['Records'][0]['s3']['bucket']['name'] # response dict keys found in CloudWatch log event, created at file upload
     json_filename = event['Records'][0]['s3']['object']['key']

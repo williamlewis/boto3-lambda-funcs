@@ -1,9 +1,13 @@
+# Persist CSV data to DynamoDB when file is uploaded to an S3 bucket
+
 import boto3
+
 s3_client = boto3.client('s3')
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('employees')
     
 def s3_csv_to_dynamodb(event, context):
+
     # get uploaded file from event response details
     bucket_name = event['Records'][0]['s3']['bucket']['name']
     object_key = event['Records'][0]['s3']['object']['key']
@@ -16,7 +20,7 @@ def s3_csv_to_dynamodb(event, context):
 
     # persist data to DynamoDB (i.e. enter data in table)
     for emp in employees:
-        emp_data = emp.split(',') # create a list to reference attributes via indices
+        emp_data = emp.split(',') # create a list to reference individual attributes via indices (match to original CSV contents)
         try:
             table.put_item(
                 Item={

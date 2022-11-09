@@ -1,11 +1,13 @@
+# Find unused Elastic IPs and send alert email using SES and Lambda environmental variables
+
 import boto3
-import os # use env variables to avoid hard coding the email addresses for sender & recipient 
+import os # use os module to set env variables, to avoid hard coding email addresses for sender & recipient 
 
 ec2_client = boto3.client('ec2')
 ses_client = boto3.client('ses')
 
 # set email addresses as environmental variables of Lambda function via console (match Keys to variable names below)
-# Note:  email addresses must be verified after being saved in SES via console
+# Note:  email addresses must be verified by recipient after initially being saved in SES via console
 FROM_MAIL = os.environ['FROM_MAIL']
 TO_MAIL = os.environ['TO_MAIL']
 
@@ -15,7 +17,7 @@ def find_unused_eips(event, context):
     ec2_resp = ec2_client.describe_addresses()
     unused_eips = []
     for address in ec2_resp['Addresses']:
-        if 'InstanceId' not in address: # lack of InstanceId key in return dict means the EIP is unused (because no instance is utilizing it)
+        if 'InstanceId' not in address: # lack of InstanceId key in return dict indicates that the EIP is unused (i.e. that no instance is utilizing it)
             unused_eips.append(address['PublicIp'])
     
     

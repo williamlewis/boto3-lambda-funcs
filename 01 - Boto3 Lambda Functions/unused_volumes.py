@@ -1,5 +1,7 @@
-import email
+# Check for unattached (unused) EBS volumes and send alert email using SNS
+
 import boto3
+
 ec2_client = boto3.client('ec2')
 sns_client = boto3.client('sns')
 
@@ -8,7 +10,8 @@ sns_arn = 'arn:aws:sns:us-east-1:095304811476:volume-alerts' # get SNS Topic ARN
 
 
 def email_unused_volumes(event, context):
-    # check for any unused EBS volumes (i.e. if they are not attached to any EC2 intance)
+    
+    # check for any unused EBS volumes (i.e. those not attached to any EC2 instance)
     unused_volumes = []
     total_unused_vol_size = 0
     for volume in volumes['Volumes']:
@@ -33,4 +36,3 @@ def email_unused_volumes(event, context):
     )
 
     return None
-
