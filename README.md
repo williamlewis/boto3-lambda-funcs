@@ -25,32 +25,27 @@ Using Boto3 within Lambda Functions to manage S3, DynamoDB, CloudWatch, EC2, AMI
     </thead>
     <tbody>
         <tr>
-            <td width="20%"><a href="">file name (hyperlink to gh page)</a></td>
-            <td width="60%">regular text description</td>
-            <td width="20%"><code>classes used (code snippet)</code></td>
-        </tr>
-        <tr>
-            <td width="20%" ><a href="">find_and_email_unused_eips.py</a></td>
+            <td width="20%" ><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/01%20-%20Boto3%20Lambda%20Functions/find_and_email_unused_eips.py">find_and_email_unused_eips.py</a></td>
             <td width="60%">Find unused Elastic IPs and send alert email using SES and Lambda environmental variables</td>
             <td width="20%"><code>EC2.Client</code>, <code>SES.Client</code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">s3_csv_to_dynamodb.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/01%20-%20Boto3%20Lambda%20Functions/s3_csv_to_dynamodb.py">s3_csv_to_dynamodb.py</a></td>
             <td width="60%">Persist CSV data to DynamoDB when file is uploaded to an S3 bucket</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">s3_json_to_dynamodb.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/01%20-%20Boto3%20Lambda%20Functions/s3_json_to_dynamodb.py">s3_json_to_dynamodb.py</a></td>
             <td width="60%">Persist JSON data to DynamoDB when file upload triggers a CloudWatch log event</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">slack_alert.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/01%20-%20Boto3%20Lambda%20Functions/slack_alert.py">slack_alert.py</a></td>
             <td width="60%">Send Slack message via webhook to alert when an instance has stopped</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">unused_volumes.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/01%20-%20Boto3%20Lambda%20Functions/unused_volumes.py">unused_volumes.py</a></td>
             <td width="60%">Check for unattached (unused) EBS volumes and send alert email using SNS</td>
             <td width="20%"><code></code></td>
         </tr>
@@ -78,57 +73,57 @@ Using Boto3 Terminal Scripts to manage EC2 Instances, EBS Volumes, & AMIs
     </thead>
     <tbody>
         <tr>
-            <td width="20%"><a href="">create_image_copy_to_diff_region.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/create_image_copy_to_diff_region.py">create_image_copy_to_diff_region.py</a></td>
             <td width="60%">Create AMI & copy to another region</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">describe_instances.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/describe_instances.py">describe_instances.py</a></td>
             <td width="60%">Describe instances from resource collection</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">dynamobd_batch_write.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/dynamobd_batch_write.py">dynamobd_batch_write.py</a></td>
             <td width="60%">Batch write data to DynamoDB table</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">dynamobd_get_and_delete.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/dynamobd_get_and_delete.py">dynamobd_get_and_delete.py</a></td>
             <td width="60%">Delete data from DynamoDB table</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">ebs_snapshots_email.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/ebs_snapshots_email.py">ebs_snapshots_email.py</a></td>
             <td width="60%">Email list of EBS Snapshots base on tags</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">ec2_collections.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/ec2_collections.py">ec2_collections.py</a></td>
             <td width="60%">Get instances from filtered resource collections</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">launch_ec2.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/launch_ec2.py">launch_ec2.py</a></td>
             <td width="60%">Launch new intances based on AMI & instance type</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">remove_old_ebs_snapshots.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/remove_old_ebs_snapshots.py">remove_old_ebs_snapshots.py</a></td>
             <td width="60%">Delete EBS snapshots older than 15 days</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">remove_unused_amis.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/remove_unused_amis.py">remove_unused_amis.py</a></td>
             <td width="60%">Deregister unused custom AMIs</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">s3_query_csv_select_object_content.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/s3_query_csv_select_object_content.py">s3_query_csv_select_object_content.py</a></td>
             <td width="60%">Query contents of CSV file stored in S3</td>
             <td width="20%"><code></code></td>
         </tr>
         <tr>
-            <td width="20%"><a href="">sec_start_stop_terminate.py</a></td>
+            <td width="20%"><a href="https://github.com/williamlewis/boto3-lambda-funcs/blob/main/02%20-%20Boto3%20Terminal%20Scripts/sec_start_stop_terminate.py">sec_start_stop_terminate.py</a></td>
             <td width="60%">Start, stop, & terminate instances based in Id</td>
             <td width="20%"><code></code></td>
         </tr>
