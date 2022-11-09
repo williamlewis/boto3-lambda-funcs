@@ -1,8 +1,11 @@
+# Create AMI & copy to another region
+
 import boto3
 
 ############################
 ## PART 1 - CREATE IMAGES ##
 ############################
+
 source_region = 'us-east-1'
 ec2 = boto3.resource('ec2', region_name=source_region)
 
@@ -10,7 +13,7 @@ instances = ec2.instances.filter(InstanceIds=['i-03842f098199c3f88'])
 
 image_ids = []
 
-# create an image for each instance in filtered list, then include in image_ids list
+# create an image from each instance, then storeeeee in image_ids list
 for instance in instances:
     image = instance.create_image(Name='Demo Boto3 ' + instance.id, Description='Demo Boto' + instance.id)
     image_ids.append(image.id)

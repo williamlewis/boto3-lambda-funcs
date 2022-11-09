@@ -1,4 +1,7 @@
+# Launch new intances based on AMI & instance type
+
 import boto3
+
 client = boto3.client('ec2')
 
 resp = client.run_instances(
@@ -8,11 +11,11 @@ resp = client.run_instances(
     # define instance type, e.g. t2.micro for free tier
     InstanceType='t2.micro',
     
-    # define min & max number of instances; both set at 1 for demo
+    # define min & max number of instances; e.g. set both to 1 to launch single instance
     MinCount=1,
     MaxCount=1
 )
 
-# from Return dict object, retrieve the InstanceID from Instances item (only one instance created)
+# from Return dict object, retrieve the InstanceID from Instances item
 for instance in resp['Instances']:
     print(instance['InstanceId'])

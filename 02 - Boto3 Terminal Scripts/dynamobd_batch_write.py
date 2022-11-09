@@ -1,6 +1,9 @@
+# Batch write data to DynamoDB table
+
 import boto3
 
-table_name = 'employees-batch-demo' # provide / update table name here
+# ---- UPDATE INPUTS HERE ---- #
+table_name = 'employees-batch-demo'
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table(table_name)

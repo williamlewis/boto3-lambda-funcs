@@ -1,9 +1,13 @@
+# Query contents of CSV file stored in S3
+
 import boto3
+
 client = boto3.client('s3')
 
 # ---- UPDATE INPUTS HERE ---- #
 bucket_name = ''
 object_key = ''
+
 sql_query = 'Select s.name, s.email from S3Object'
 
 response = client.select_object_content(
