@@ -1,16 +1,12 @@
-## Hands-on projects to automate actions in AWS using Boto3 Python SDK
-<br/>
-<br/>
+# Mastering Boto3 and Lambda Functions Using Python (Course)
 
-**Boto3 is the Python-based SDK for Amazon Web Services, enabling programmatic control services.**
+Hands-on projects to automate actions in AWS using [**Boto3 Python SDK**](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 
-*Course: Mastering Boto3 and Lambda Functions Using Python (Udemy)*
+Boto3 is the Python-based SDK for Amazon Web Services, enabling programmatic control services.
 
-*Instructor: Hari Kammana*
+Instructor: Hari Kammana
 
 <br/>
-<br/>
-
 
 # Part 1: Boto3 for Lambda Functions
 Using Boto3 within Lambda Functions to manage S3, DynamoDB, CloudWatch, EC2, AMIs, SNS, & SES
